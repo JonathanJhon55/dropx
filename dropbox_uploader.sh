@@ -1548,7 +1548,6 @@ else
     echo -ne " under the 'Generated access token' section, then copy and paste the new access token here:\n\n"
 
     echo -ne " # Access token: "
-    read -r OAUTH_ACCESS_TOKEN
 
     echo -ne "\n > The access token is $OAUTH_ACCESS_TOKEN. Looks ok? [y/N]: "
    
