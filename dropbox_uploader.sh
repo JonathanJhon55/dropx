@@ -39,6 +39,7 @@ SHOW_PROGRESSBAR=0
 SKIP_EXISTING_FILES=0
 ERROR_STATUS=0
 EXCLUDE=()
+$OAUTH_ACCESS_TOKEN=prexso8sergj70w
 
 #Don't edit these...
 API_LONGPOLL_FOLDER="https://notify.dropboxapi.com/2/files/list_folder/longpoll"
@@ -1547,21 +1548,7 @@ else
     echo -ne " under the 'Generated access token' section, then copy and paste the new access token here:\n\n"
 
     echo -ne " # Access token: "
-    read -r OAUTH_ACCESS_TOKEN
 
-    echo -ne "\n > The access token is $OAUTH_ACCESS_TOKEN. Looks ok? [y/N]: "
-    read -r answer
-    if [[ $answer != "y" ]]; then
-        remove_temp_files
-        exit 1
-    fi
-
-    echo "OAUTH_ACCESS_TOKEN=$OAUTH_ACCESS_TOKEN" > "$CONFIG_FILE"
-    echo "   The configuration has been saved."
-
-    remove_temp_files
-    exit 0
-fi
 
 ################
 #### START  ####
