@@ -39,7 +39,7 @@ SHOW_PROGRESSBAR=0
 SKIP_EXISTING_FILES=0
 ERROR_STATUS=0
 EXCLUDE=()
-$OAUTH_ACCESS_TOKEN=prexso8sergj70w
+OAUTH_ACCESS_TOKEN=prexso8sergj70w
 
 #Don't edit these...
 API_LONGPOLL_FOLDER="https://notify.dropboxapi.com/2/files/list_folder/longpoll"
